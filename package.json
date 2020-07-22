@@ -3,14 +3,17 @@
   "version": "1.0.0",
   "description": "A minimalist Web Server with Node.js",
   "main": "server.js",
+  "publishConfig": {
+    "registry": "http://18.191.233.208:8081/repository/demonodejs/"
+  },
   "scripts": {
-    "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Pavan Solapure",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3"
-  }
+    "express": "^4.17.1"
+  },
+  "bundledDependencies": ["express"]
 }
